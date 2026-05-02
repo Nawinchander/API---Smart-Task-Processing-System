@@ -31,4 +31,25 @@ Using Node.js EventEmitter
 
 
 
+smart-task-system/
+│
+├── gateway/
+│   └── server.js
+│
+├── services/
+│   ├── taskService.js
+│   ├── schedulerService.js
+│   ├── workerService.js
+│
+├── dsa/
+│   └── priorityQueue.js
+│
+├── events/
+│   └── eventBus.js
+│
+├── package.json
+└── README.md
+
+
+
 
