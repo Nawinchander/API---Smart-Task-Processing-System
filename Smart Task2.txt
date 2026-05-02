@@ -29,3 +29,16 @@ Add:
 Load balancer
 Multiple worker nodes
 Redis queue
+
+🔹 Q5: What if tasks increase?
+
+👉 Use:
+
+Distributed queue
+Sharding
+Horizontal scaling workers
+🔹 Q6: Time Complexity?
+Operation	Complexity
+Insert	O(log n)
+Remove	O(log n)
+
