@@ -1,3 +1,17 @@
+---------------------------
+
+TEST
+
+POST http://localhost:3000/task
+
+{
+  "name": "Send Email",
+  "priority": 1
+}
+
+
+--------------------------
+
 “Smart Task Processing System”
 👉 Combines:
 

@@ -1,0 +1,31 @@
+What’s Happening Internally
+API Gateway receives request
+Task Service creates task
+Event emitted → Scheduler
+Scheduler adds to Heap (DSA)
+Every 3 sec → highest priority task picked
+Worker processes it
+🧠 Interview Perspective (Important)
+🔹 Q1: Why use Priority Queue?
+
+👉 Ensures O(log n) insertion & deletion
+👉 Efficient scheduling vs array (O(n))
+
+🔹 Q2: Why Event-Driven Architecture?
+
+👉 Loose coupling
+👉 Scalable (add more workers easily)
+
+🔹 Q3: Where is System Design here?
+API Gateway → Single entry
+Services → Separation of concerns
+Event Bus → Async communication
+Scheduler → Core processing unit
+🔹 Q4: How to scale this?
+Replace EventEmitter with:
+Apache Kafka
+RabbitMQ
+Add:
+Load balancer
+Multiple worker nodes
+Redis queue
