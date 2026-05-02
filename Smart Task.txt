@@ -1,0 +1,34 @@
+“Smart Task Processing System”
+👉 Combines:
+
+System Design → Microservices + Event-driven + API Gateway
+DSA → Priority Queue (Heap) for task scheduling
+Backend → Node.js + Express
+Interlinked APIs → Services talk to each other
+
+
+Smart Task Processing API
+💡 Real-world analogy
+
+Think like:
+
+Uber surge system
+Swiggy order priority
+Tasks processed based on priority + time
+
+
+System Design Used
+1. API Gateway
+Entry point for all requests
+2. Task Service
+Handles task creation
+3. Scheduler Service
+Uses Heap (DSA) for priority processing
+4. Worker Service
+Executes tasks
+5. Event-driven communication
+Using Node.js EventEmitter
+
+
+
+
