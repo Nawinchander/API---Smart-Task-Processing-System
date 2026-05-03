@@ -1,18 +1,20 @@
+require('dotenv').config();
 const express = require('express');
-const bodyParser = require('body-parser');
 
-const taskService = require('../services/taskService');
+require('../db/mongo');
+require('../db/mysql');
 
-// Start services
 require('../services/schedulerService');
 require('../services/workerService');
 
+const rateLimiter = require('./middleware/rateLimiter');
+const taskRoutes = require('./routes/taskRoutes');
+
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 
-// Routes
-app.post('/task', taskService.createTask);
+app.use(rateLimiter);
+app.use('/api', taskRoutes);
 
-app.listen(3000, () => {
-  console.log("API Gateway running on port 3000");
-});
+app.listen(3000, () => console.log("Gateway running"));
+
