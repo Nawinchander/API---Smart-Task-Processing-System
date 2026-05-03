@@ -42,3 +42,52 @@ Operation	Complexity
 Insert	O(log n)
 Remove	O(log n)
 
+Final Architecture (What you’re building)
+🧠 System Design Upgrade
+API Gateway (Express)
+Task Service
+Scheduler Service (Heap - DSA)
+Worker Service
+MongoDB → Task metadata (flexible)
+MySQL → Transaction logs (structured)
+Rate Limiting
+Dockerized services
+CI/CD pipeline
+
+smart-task-system/
+│
+├── gateway/
+│   ├── server.js
+│   ├── routes/
+│   │   └── taskRoutes.js
+│   └── middleware/
+│       └── rateLimiter.js
+│
+├── services/
+│   ├── taskService.js
+│   ├── schedulerService.js
+│   ├── workerService.js
+│
+├── dsa/
+│   └── priorityQueue.js
+│
+├── events/
+│   └── eventBus.js
+│
+├── db/
+│   ├── mongo.js
+│   └── mysql.js
+│
+├── models/
+│   └── taskModel.js
+│
+├── docker/
+│   ├── Dockerfile
+│   └── docker-compose.yml
+│
+├── .github/workflows/
+│   └── ci-cd.yml
+│
+├── package.json
+└── README.md
+
