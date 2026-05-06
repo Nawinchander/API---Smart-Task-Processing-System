@@ -1,0 +1,93 @@
+What You Just Built (Interview Gold)
+💡 Hybrid DB Design
+
+
+MongoDB → flexible task data
+
+
+MySQL → structured logs
+
+
+
+💡 Rate Limiting
+
+
+Prevents API abuse
+
+
+Protects backend
+
+
+
+💡 Docker
+
+
+Same environment everywhere
+
+
+Easy deployment
+
+
+
+💡 CI/CD
+Using GitHub Actions:
+
+
+Auto build
+
+
+Auto test
+
+
+Deployment ready
+
+
+
+🧠 Interview Q&A (Advanced)
+🔹 Why use Mongo + MySQL together?
+👉 Polyglot persistence
+👉 Use best DB per use case
+
+🔹 Why Docker?
+👉 Eliminates “works on my machine” problem
+
+🔹 How to scale?
+
+
+Add Redis queue
+
+
+Use Kafka instead of EventEmitter
+
+
+Add load balancer
+
+
+
+🔹 Where is DSA used?
+👉 Heap inside scheduler
+👉 Efficient priority processing
+
+🔹 How rate limiting works?
+👉 Tracks IP requests in time window
+
+🚀 Next Level (If you want)
+I can upgrade this into:
+
+
+🔐 JWT Authentication
+
+
+📊 Dashboard (React)
+
+
+📦 Redis Queue
+
+
+🔁 Retry + Dead Letter Queue
+
+
+☁️ Deploy to AWS (EC2 + Nginx)
+
+
+Just tell me 👍
